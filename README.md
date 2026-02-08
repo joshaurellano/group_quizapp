@@ -251,7 +251,17 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 Created for Truserve Pharmaceutical in Naga City
 
-## 📞 Support
+## � Group
+
+**Group Name:** The Think Tank
+
+**Members and Roles:**
+- Joshua Anthony Aurellano - Logic State
+- Dominnica Narvato - UI/UX
+- Aron Ronel De Los Santos - Documentation
+- Marvin Nobela - Testing/Polish
+
+## �📞 Support
 
 For questions or issues, please open an issue in the repository.
 
