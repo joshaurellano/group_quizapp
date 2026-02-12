@@ -788,7 +788,7 @@ class _PharmacyQuizScreenState extends State<PharmacyQuizScreen>
                             const SizedBox(width: 12),
                             Expanded(
                               child: Text(
-                                'Time\'s up! The correct answer is highlighted.',
+                                'Time\'s up! The correct answer is ${String.fromCharCode(65 + correctAnswerIndex as int)}.',
                                 style: TextStyle(
                                   fontSize: 15,
                                   fontWeight: FontWeight.w500,
@@ -833,7 +833,7 @@ class _PharmacyQuizScreenState extends State<PharmacyQuizScreen>
                               child: Text(
                                 (isSubmitted && selectedAnswerIndex == correctAnswerIndex)
                                     ? 'Correct! Well done!'
-                                    : 'Incorrect. The right answer is highlighted.',
+                                    : 'Incorrect. The right answer is ${String.fromCharCode(65 + correctAnswerIndex as int)}',
                                 style: TextStyle(
                                   fontSize: 15,
                                   fontWeight: FontWeight.w500,
