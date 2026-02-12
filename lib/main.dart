@@ -58,7 +58,7 @@ class _PharmacyQuizScreenState extends State<PharmacyQuizScreen>
 
   // Define consistent color scheme
   static const Color primaryBlue = Color(0xFF2196F3);
-  static const Color secondaryBlue = Color(0xFF64B5F6);
+  // static const Color secondaryBlue = Color(0xFF64B5F6);
   static const Color accentBlue = Color(0xFF90CAF9);
   static const Color lightBackground = Color(0xFFF8FBFF);
   static const Color cardWhite = Color(0xFFFFFFFF);
@@ -68,7 +68,7 @@ class _PharmacyQuizScreenState extends State<PharmacyQuizScreen>
   static const Color errorLight = Color(0xFFFFEBEE);
   static const Color warningOrange = Color(0xFFFF9800);
   static const Color warningLight = Color(0xFFFFF3E0);
-  static const Color neutralGray = Color(0xFF757575);
+  // static const Color neutralGray = Color(0xFF757575);
   static const Color neutralLight = Color(0xFFFAFAFA);
   static const Color textPrimary = Color(0xFF212121);
   static const Color textSecondary = Color(0xFF666666);
@@ -81,7 +81,7 @@ class _PharmacyQuizScreenState extends State<PharmacyQuizScreen>
   
   // Option button colors
   static const Color optionNormal = Color(0xFFFFFFFF);
-  static const Color optionHover = Color(0xFFE3F2FD);
+  // static const Color optionHover = Color(0xFFE3F2FD);
   static const Color optionSelected = Color(0xFFBBDEFB);
   static const Color optionCorrect = Color(0xFFE8F5E9);
   static const Color optionIncorrect = Color(0xFFFFEBEE);
@@ -365,7 +365,7 @@ class _PharmacyQuizScreenState extends State<PharmacyQuizScreen>
                   borderRadius: BorderRadius.circular(20),
                   boxShadow: [
                     BoxShadow(
-                      color: primaryBlue.withOpacity(0.15),
+                      color: primaryBlue.withValues(alpha: .15),
                       blurRadius: 20,
                       offset: const Offset(0, 10),
                     ),
@@ -379,7 +379,7 @@ class _PharmacyQuizScreenState extends State<PharmacyQuizScreen>
                         Icon(
                           Icons.medical_services,
                           size: 100,
-                          color: primaryBlue.withOpacity(0.1),
+                          color: primaryBlue.withValues(alpha: .1),
                         ),
                         Icon(
                           Icons.local_pharmacy,
@@ -419,7 +419,7 @@ class _PharmacyQuizScreenState extends State<PharmacyQuizScreen>
                           borderRadius: BorderRadius.circular(30),
                         ),
                         elevation: 4,
-                        shadowColor: primaryBlue.withOpacity(0.3),
+                        shadowColor: primaryBlue.withValues(alpha: .3),
                       ),
                       child: const Text(
                         'Start Quiz',
@@ -473,7 +473,7 @@ class _PharmacyQuizScreenState extends State<PharmacyQuizScreen>
               borderRadius: BorderRadius.circular(16),
               boxShadow: [
                 BoxShadow(
-                  color: Colors.grey.withOpacity(0.1),
+                  color: Colors.grey.withValues(alpha: .1),
                   blurRadius: 8,
                   offset: const Offset(0, 4),
                 ),
@@ -494,13 +494,13 @@ class _PharmacyQuizScreenState extends State<PharmacyQuizScreen>
                             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                             decoration: BoxDecoration(
                               color: _timeLeft <= 5 
-                                  ? errorRed.withOpacity(0.1)
-                                  : primaryBlue.withOpacity(0.1),
+                                  ? errorRed.withValues(alpha: .1)
+                                  : primaryBlue.withValues(alpha: .1),
                               borderRadius: BorderRadius.circular(12),
                               border: Border.all(
                                 color: _timeLeft <= 5 
-                                    ? errorRed.withOpacity(0.3)
-                                    : primaryBlue.withOpacity(0.3),
+                                    ? errorRed.withValues(alpha: .3)
+                                    : primaryBlue.withValues(alpha: .3),
                                 width: 1.5,
                               ),
                             ),
@@ -577,7 +577,7 @@ class _PharmacyQuizScreenState extends State<PharmacyQuizScreen>
                         borderRadius: BorderRadius.circular(16),
                         boxShadow: [
                           BoxShadow(
-                            color: primaryBlue.withOpacity(0.08),
+                            color: primaryBlue.withValues(alpha: .08),
                             blurRadius: 12,
                             offset: const Offset(0, 6),
                           ),
@@ -591,7 +591,7 @@ class _PharmacyQuizScreenState extends State<PharmacyQuizScreen>
                               Container(
                                 padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                                 decoration: BoxDecoration(
-                                  color: accentBlue.withOpacity(0.1),
+                                  color: accentBlue.withValues(alpha: .1),
                                   borderRadius: BorderRadius.circular(8),
                                 ),
                                 child: Row(
@@ -688,7 +688,7 @@ class _PharmacyQuizScreenState extends State<PharmacyQuizScreen>
                               ),
                               boxShadow: [
                                 BoxShadow(
-                                  color: Colors.grey.withOpacity(0.05),
+                                  color: Colors.grey.withValues(alpha: .05),
                                   blurRadius: 4,
                                   offset: const Offset(0, 2),
                                 ),
@@ -702,7 +702,7 @@ class _PharmacyQuizScreenState extends State<PharmacyQuizScreen>
                                   decoration: BoxDecoration(
                                     shape: BoxShape.circle,
                                     color: isSelected || (isSubmitted && isCorrect) 
-                                        ? borderColor.withOpacity(0.1) 
+                                        ? borderColor.withValues(alpha: .1) 
                                         : Colors.transparent,
                                     border: Border.all(
                                       color: borderColor,
@@ -864,7 +864,7 @@ class _PharmacyQuizScreenState extends State<PharmacyQuizScreen>
                                   borderRadius: BorderRadius.circular(12),
                                 ),
                                 elevation: 3,
-                                shadowColor: primaryBlue.withOpacity(0.3),
+                                shadowColor: primaryBlue.withValues(alpha: .3),
                               ),
                               child: const Text(
                                 'Submit Answer',
@@ -943,7 +943,7 @@ class _PharmacyQuizScreenState extends State<PharmacyQuizScreen>
                   borderRadius: BorderRadius.circular(20),
                   boxShadow: [
                     BoxShadow(
-                      color: primaryBlue.withOpacity(0.1),
+                      color: primaryBlue.withValues(alpha: .1),
                       blurRadius: 20,
                       offset: const Offset(0, 10),
                     ),
@@ -957,10 +957,10 @@ class _PharmacyQuizScreenState extends State<PharmacyQuizScreen>
                       height: 120,
                       decoration: BoxDecoration(
                         color: percentage >= 70 
-                            ? successGreen.withOpacity(0.1)
+                            ? successGreen.withValues(alpha: .1)
                             : percentage >= 50 
-                                ? primaryBlue.withOpacity(0.1)
-                                : errorRed.withOpacity(0.1),
+                                ? primaryBlue.withValues(alpha: .1)
+                                : errorRed.withValues(alpha: .1),
                         shape: BoxShape.circle,
                       ),
                       child: Icon(
